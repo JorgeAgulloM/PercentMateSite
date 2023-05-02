@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Título de la página</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+          div {
+            margin-top: 50px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            max-width: 800px;
+          }
+      h1, h2 {
+        text-align: center;
+      }
+      img {
+        max-width: 150px;
+      }
+      footer {
+        margin-top: 50px;
+        text-align: center;
+      }
+    </style>
+    <script>
+      window.onload = function(){
+      // Obtén los botones de idioma
+      var buttonEs = document.getElementById("button-es");
+      var buttonEn = document.getElementById("button-en");
+    
+      // Agrega un event listener a cada botón de idioma
+      buttonEs.addEventListener("click", function() {
+        // Cambia la URL a la versión en español de la página
+        window.location.href = "index-es.html";
+      });
+    
+      buttonEn.addEventListener("click", function() {
+        // Cambia la URL a la versión en inglés de la página
+        window.location.href = "index-en.html";
+      });
+    }
+    </script>
+  </head>
+  <body>
+    <div>
+      <img src="https://lh3.googleusercontent.com/zuwVSO5RvRT_lpn5hu0RfpLV6Xp6L02_6_uEhq-P0inzi1uTk0JmKFwtbw0nUGYfx0xC" alt="Texto alternativo de la imagen" size="30">
+    </div>
+    <h1>Percent Mate</h1>
+    <div id="language-buttons">
+      <button id="button-es">Español</button>
+      <button id="button-en">English</button>
+    </div>
+    <footer>
+      <p>Contacto: <a href="mailto:softyorch@gmail.com">softyorch@gmail.com</a></p>
+    </footer>
+  </body>
+</html>
